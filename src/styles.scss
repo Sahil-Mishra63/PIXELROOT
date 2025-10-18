@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+
+}
+
+html, body {
+  background-color: #000;  
+  color: #fff;             
+  
+}
+
+@keyframes floaty {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-30px) translateX(20px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
+.animate-floaty {
+  animation: floaty 6s ease-in-out infinite;
+}
