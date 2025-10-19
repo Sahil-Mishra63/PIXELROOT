@@ -204,7 +204,7 @@
     </div>
   </section>
 
-  <section id="cta" class="cta-section w-[100vw]" data-aos="fade-up">
+  <section id="cta" class="cta-section w-[100vw] relative" data-aos="fade-up">
   <div class="cta-overlay"></div>
 
   <div class="cta-content">
@@ -214,25 +214,25 @@
       PixelRoot is ready to craft it with clarity and passion.
     </p>
 
-    <button class="cta-btn">Start Your Project 🚀</button>
+    <button class="cta-btn" (click)="openPopup()">Start Your Project 🚀</button>
   </div>
 
   <!-- Contact Popup -->
-<div class="contact-popup" id="contactPopup">
-  <div class="popup-content" data-aos="zoom-in">
-    <h2>Start Your Project 🚀</h2>
-    <p>Tell us what you want to build — we’ll reach out soon!</p>
+    <div class="contact-popup" id="contactPopup">
+      <div class="popup-content absolute" >
+        <h2>Start Your Project 🚀</h2>
+        <p>Tell us what you want to build — we’ll reach out soon!</p>
 
-    <form #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)">
-      <input type="text" name="name" ngModel placeholder="Your Name" required />
-      <input type="email" name="email" ngModel placeholder="Your Email" required />
-      <textarea name="message" ngModel placeholder="Describe your project..." rows="4" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+        <form #contactForm="ngForm" #contactFormElement (ngSubmit)="sendEmail(contactForm)">
+          <input type="text" name="name" ngModel placeholder="Your Name" required />
+          <input type="email" name="email" ngModel placeholder="Your Email" required />
+          <textarea name="message" ngModel placeholder="Describe your project..." rows="4" required></textarea>
+          <button type="submit">Send</button>
+        </form>
 
-    <span class="close-btn" onclick="closePopup()">✖</span>
-  </div>
-</div>
+        <span class="close-btn" (click)="closePopup()">✖</span>
+      </div>
+    </div>
 
 </section>
 
@@ -243,7 +243,7 @@
     <!-- Logo & Tagline -->
     <div class="footer-brand">
       <h2>PixelRoot</h2>
-      <p>Clarity. Focus. Impact.</p>
+      <p>Dream. Create. Dominate.</p>
     </div>
 
     <!-- Quick Links -->
@@ -284,16 +284,4 @@
 
 </div>
 
-<!-- <section class="hero">
-  <div class="hero-left">
-    <h1 class="hero-title">PixelRoot — We craft digital experiences that sell.</h1>
-    <p class="hero-sub">Modern websites & web apps for local businesses.</p>
-    <a href="/projects" class="btn">See our work</a>
-    <a href="https://wa.me/919999999999?text=Hi%20PixelRoot" target="_blank" class="btn-outline">Chat on WhatsApp</a>
-  </div>
-  <div class="hero-3d"> -->
-<!-- Paste Spline iframe here (create scene in spline.design and copy iframe) -->
-<!-- <iframe src="https://my.spline.design/your-scene-hash/" frameborder="0" style="width:100%;height:480px"></iframe> -->
-<!-- <iframe src='https://my.spline.design/thebatmanlogocopy-G10RTlzFlPJPEPUTtVhbB0A3/' frameborder='0' width='100%' height='480px'></iframe>
-  </div>
-</section> -->
+
