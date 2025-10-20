@@ -13,7 +13,12 @@ import { RouterLink } from "@angular/router";
   templateUrl: './dineease.component.html',
   styleUrl: './dineease.component.scss'
 })
-export class DineeaseComponent {
+export class DineeaseComponent implements OnInit {
+
+  ngOnInit() {
+    
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   @ViewChild('contactFormElement') contactFormElement!: ElementRef<HTMLFormElement>;
   
