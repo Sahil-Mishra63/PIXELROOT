@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { NgForm } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [ CommonModule, FormsModule ],
+  imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss'
 })
@@ -80,7 +81,8 @@ export class LandingComponent implements AfterViewInit {
       'assets/images/dinease2.png',
       'assets/images/dinease3.png',
       'assets/images/dinease4.png'
-    ]
+    ],
+    route: '/dineease'
   },
   {
     title: 'TechArcade',
@@ -91,7 +93,8 @@ export class LandingComponent implements AfterViewInit {
       'assets/images/Ta5.png',
       'assets/images/Ta4.png',
       'assets/images/Ta3.png'
-    ]
+    ],
+    
   },
   {
     title: 'ProBuild',

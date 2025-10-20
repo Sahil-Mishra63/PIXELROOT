@@ -4,6 +4,7 @@ import { LandingComponent } from "./pages/landing/landing.component";
 import { OnInit } from '@angular/core';
 import * as AOS from 'aos';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({

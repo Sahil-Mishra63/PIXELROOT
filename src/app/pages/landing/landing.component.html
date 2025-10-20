@@ -170,7 +170,7 @@
     <div class="project-text">
       <h2>{{ project.title }}</h2>
       <p>{{ project.description }}</p>
-      <button class="neon-btn">View Project</button>
+      <button class="neon-btn" routerLink="/{{project.route}}" >View Project</button>
     </div>
 
     <!-- Image Scroll Side -->
@@ -183,7 +183,7 @@
     </div>
 
   </div>
-  <button class="see-more">See More</button>
+  <button class="see-more" routerLink="/Works">See More</button>
   </section>
 
   <section id="services" class="services-section min-h-screen w-[100vw] flex flex-col items-center justify-evenly text-white px-6 py-10 relative overflow-hidden" data-aos="fade-up">
