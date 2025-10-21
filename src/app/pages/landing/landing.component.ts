@@ -94,7 +94,7 @@ export class LandingComponent implements AfterViewInit {
       'assets/images/Ta4.png',
       'assets/images/Ta3.png'
     ],
-    
+    route: '/techarcade'
   },
   {
     title: 'ProBuild',
@@ -105,7 +105,8 @@ export class LandingComponent implements AfterViewInit {
       'assets/images/pb3.png',
       'assets/images/pb2.png',
       'assets/images/pb4.png'
-    ]
+    ],
+    route: '/probuild'
   }
 ];
 

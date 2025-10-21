@@ -44,7 +44,8 @@ scrollTo(event: Event, sectionId: string) {
       'assets/images/Ta5.png',
       'assets/images/Ta4.png',
       'assets/images/Ta3.png'
-    ]
+    ],
+    route: '/techarcade'
   },
   {
     title: 'ProBuild',
@@ -55,7 +56,8 @@ scrollTo(event: Event, sectionId: string) {
       'assets/images/pb3.png',
       'assets/images/pb2.png',
       'assets/images/pb4.png'
-    ]
+    ],
+    route: '/probuild'
   }
 ];
 }
