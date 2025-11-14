@@ -97,16 +97,16 @@ export class LandingComponent implements AfterViewInit {
     route: '/techarcade'
   },
   {
-    title: 'ProBuild',
-    description: 'A Resume Builder + Email generator tool built using Angular.',
+    title: 'Greek God Fitness',
+    description: 'A Fitness Application built using React and React Native.',
     images: [
-      'assets/images/pb3.png',
-      'assets/images/pb1.png',
-      'assets/images/pb3.png',
-      'assets/images/pb2.png',
-      'assets/images/pb4.png'
+      'assets/images/ggf3.png',
+      'assets/images/ggf4.png',
+      'assets/images/underDev.png',
+      'assets/images/underDev.png',
+      'assets/images/ggf2.png'
     ],
-    route: '/probuild'
+    route: '/ggf'
   }
 ];
 

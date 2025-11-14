@@ -58,6 +58,18 @@ scrollTo(event: Event, sectionId: string) {
       'assets/images/pb4.png'
     ],
     route: '/probuild'
+  },
+  {
+    title: 'Greek God Fitness',
+    description: 'A Fitness application built using React and React Native.',
+    images: [
+      'assets/images/ggf2.png',
+      'assets/images/ggf3.png',
+      'assets/images/ggf4.png',
+      'assets/images/ggf3.png',
+      'assets/images/underDev.png'
+    ],
+    route: '/ggf'
   }
 ];
 }

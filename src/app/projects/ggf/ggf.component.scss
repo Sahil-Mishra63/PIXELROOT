@@ -1,0 +1,97 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 12vh;
+    padding: 0 20px;
+
+    background: #0a0a0f;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    animation: moveGrid 14s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes moveGrid {
+    from { transform: translateY(0); }
+    to { transform: translateY(-200px); }
+}
+
+
+h1, h2, p {
+    background: linear-gradient(90deg, #4b0000, #f3e3e2, #1b2e3c, #00eaff);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientMove 6s linear infinite;
+    background-size: 300%;
+    text-align: center;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
+}
+
+
+
+h1 {
+    font-size: 7vw;  /* scales with screen */
+    line-height: 1.1;
+    font-family: Audiowide;
+}
+
+h2 {
+    font-size: 5vw;
+    line-height: 1.1;
+    font-family: "Kaushan Script";
+}
+
+p {
+    font-size: 3vw;
+    font-family: Audiowide;
+}
+
+/* TABLETS */
+@media (max-width: 992px) {
+    h1 { font-size: 10vw; }
+    h2 { font-size: 7vw; }
+    p { font-size: 4.5vw; }
+    .container { gap: 10vh; }
+}
+
+/* MOBILES */
+@media (max-width: 600px) {
+    h1 { font-size: 12vw; }
+    h2 { font-size: 9vw; }
+    p { font-size: 6vw; }
+    .container { gap: 8vh; }
+}
+
+@media (max-width: 400px) {
+    h1 { font-size: 14vw; }
+    h2 { font-size: 11vw; }
+    p { font-size: 7vw; }
+    .container { gap: 6vh; }
+}
